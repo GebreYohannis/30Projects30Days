@@ -16,6 +16,6 @@ const appendAlert = (message, type) => {
 const alertTrigger = document.querySelector("#liveAlertBtn");
 if (alertTrigger) {
   alertTrigger.addEventListener("click", () => {
-    appendAlert("Nice!, you triggerd this alert!", "success");
+    appendAlert("Nice!, you triggerd this alert!", "danger");
   });
 }

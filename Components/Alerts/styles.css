@@ -16,6 +16,10 @@ body {
   background: #0b0617fc;
   color: #fff;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -23,9 +27,15 @@ h1 {
   margin: 2rem;
   color: #ccc;
 }
+
+.container {
+  max-width: 500px;
+  padding: 1rem;
+  display: inline-block;
+}
 .alert {
   padding: 1rem 2rem;
-  margin: 2rem;
+  margin-bottom: 2rem;
   border: 1px solid #ccc;
   background: rgba(42, 150, 138, 0.6);
   border-radius: 5px;
@@ -44,6 +54,12 @@ h1 {
   border-color: dodgerblue;
   background: #0b0b25af;
   color: #5c7dc1;
+}
+
+.alert--danger {
+  border-color: #e73333;
+  background: #742f2faf;
+  color: #da7979;
 }
 
 .message {
@@ -83,5 +99,14 @@ h1 {
 }
 
 .btn--primary:hover {
+  opacity: 0.7;
+}
+
+.btn--secondary {
+  background: #4ca34c;
+  color: #fff;
+}
+
+.btn--secondary:hover {
   opacity: 0.7;
 }
